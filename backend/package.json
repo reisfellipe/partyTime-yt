@@ -4,7 +4,7 @@
   "description": "it is a project that were done with the youtube´s teacher, for people that intend to do a party using all money features.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon app.js"
   },
   "keywords": [],
   "author": "",
