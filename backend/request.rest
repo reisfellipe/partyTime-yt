@@ -27,3 +27,15 @@ Content-type: application/json
     "price":2300,
     "image": "https://images.pexels.com/photos/7478450/pexels-photo-7478450.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
 }
+
+###
+POST http://localhost:3000/api/parties
+Content-Type: : application/json
+
+{
+    "title":"Meu evento",
+    "author":"Fellipe",
+    "description":"Uma festa de aniversário",
+    "budget":9000,
+    "image": "https://images.pexels.com/photos/3171837/pexels-photo-3171837.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+}
