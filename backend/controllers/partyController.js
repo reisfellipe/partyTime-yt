@@ -1,14 +1,13 @@
 const PartyModel = require("../models/Party");
  
 const checkPartyBudget = (budget, services)=>{
-    const priceSum = services.reduce((sum,service)=> sum + service.price, 0)
+    const priceSum = services.reduce((sum,service)=> sum + service.price, 0);
     
     console.log(priceSum, budget);
     
     if(priceSum > budget){
         return false;
     }
-
 
     return true;
 }
@@ -28,14 +27,14 @@ const partyController = {
 
             //BUDGET < VALOR DOS SERVIÇOS != NOVO SERVIÇO
 
-            if(party.servicess && !checkPartyBudget(party.budget, party.service)){
+            if(party.services && !checkPartyBudget(party.budget, party.services)){
                 res.status(406).json({msg: "O seu orçamento é insuficiente."});
                 return;
             }
 
             const response = await PartyModel.create(party);
 
-            res.status(201).json({response, msg:"Testa criada com sucesso!"});
+            res.status(201).json({response, msg:"Festa criada com sucesso!"});
         }catch(error){
             console.log(error);
         }
