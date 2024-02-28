@@ -62,3 +62,29 @@ GET http://localhost:3000/api/parties/65de87233ee816ba97f28477
 
 ###
 DELETE http://localhost:3000/api/parties/65de87233ee816ba97f28477
+
+###
+PUT http://localhost:3000/api/parties/65de87233ee816ba97f28477
+Content-Type: application/json
+
+{
+    "title":"Meu maior evento 2",
+    "author":"Fellipe",
+    "description":"Uma festa de aniversário",
+    "budget":92000,
+    "image": "https://images.pexels.com/photos/3171837/pexels-photo-3171837.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "services": [
+        {
+            "name": "Algum serviço 1",
+            "description": "Qualquer descrição",
+            "price":18200,
+            "image": "https://images.pexels.com/photos/7478450/pexels-photo-7478450.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        },
+        {
+            "name": "Algum serviço 2",
+            "description": "Qualquer descrição",
+            "price":1900,
+            "image": "https://images.pexels.com/photos/7478450/pexels-photo-7478450.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        }
+    ]
+}
