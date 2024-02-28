@@ -42,7 +42,7 @@ Content-Type: : application/json
         {
             "name": "Algum serviço 1",
             "description": "Qualquer descrição",
-            "price":1900,
+            "price":1800,
             "image": "https://images.pexels.com/photos/7478450/pexels-photo-7478450.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         },
         {
@@ -53,3 +53,12 @@ Content-Type: : application/json
         }
     ]
 }
+
+###
+GET http://localhost:3000/api/parties
+
+###
+GET http://localhost:3000/api/parties/65de87233ee816ba97f28477
+
+###
+DELETE http://localhost:3000/api/parties/65de87233ee816ba97f28477
